@@ -7,6 +7,7 @@ import images from 'app/src/images';
 
 import MainTabNavigator from 'app/src/navigation/MainTabNavigator';
 import AppNavigator from 'app/src/navigation/AppNavigator';
+import Navigation from './src';
 
 export default class App extends React.Component {
   static defaultProps = {
@@ -46,7 +47,7 @@ export default class App extends React.Component {
       );
     }
     return (
-      <AppNavigator />
+      <Navigation />
     );
   }
 }
